@@ -32,3 +32,16 @@ texto_2 = '7'
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+
+if(texto_1 > texto_2):
+    print('texto_1: {} es mayor a texto_2: {}'.format(texto_1, texto_2))
+else:
+    print('texto_1: {} es menor a texto_2: {}'.format(texto_1, texto_2))
+
+numero_1 = int(texto_1)
+numero_2 = int(texto_2)
+
+if(numero_1 > numero_2):
+    print('numero_1 = {} es mayor a numero_2 = {}'.format(numero_1, numero_2))
+else:
+    print('numero_1 = {} es menor a numero_2 = {}'.format(numero_1, numero_2))
