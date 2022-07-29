@@ -33,3 +33,69 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+palabra_1 = input('Ingrese palabra 1\n')
+palabra_2 = input('Ingrese palabra 2\n')
+palabra_3 = input('Ingrese palabra 3\n')
+
+tipo_orden = int(input('Ingrese modo 1 o 2 para ordenar las palabras\n'))
+
+if(tipo_orden == 1):
+
+    if(palabra_1[0] > palabra_2[0] and palabra_1[0] > palabra_3[0]):
+
+        if(palabra_2[0] > palabra_3[0]):
+
+            print('{}, {}, {}'.format(palabra_1, palabra_2, palabra_3))
+
+        else:
+            print('{}, {}, {}'.format(palabra_1, palabra_3, palabra_2))
+
+    if(palabra_2[0] > palabra_1[0] and palabra_2[0] > palabra_3[0]):
+
+        if(palabra_3[0] > palabra_1[0]):
+
+            print('{}, {}, {}'.format(palabra_2, palabra_3, palabra_1))
+
+        else:
+            print('{}, {}, {}'.format(palabra_2, palabra_1, palabra_3))
+
+    if(palabra_3[0] > palabra_1[0] and palabra_3[0] > palabra_2[0]):
+
+        if(palabra_2[0] > palabra_1[0]):
+
+            print('{}, {}, {}'.format(palabra_3, palabra_2, palabra_1))
+
+        else:
+            print('{}, {}, {}'.format(palabra_3, palabra_1, palabra_2))
+
+if(tipo_orden == 2):
+
+    if(len(palabra_1) > len(palabra_2) and len(palabra_1) > len(palabra_3)):
+
+        if(len(palabra_2) > len(palabra_3)):
+
+            print('{}, {}, {}'.format(palabra_1, palabra_2, palabra_3))
+
+        else:
+            print('{}, {}, {}'.format(palabra_1, palabra_3, palabra_2))
+
+    if(len(palabra_2) > len(palabra_1) and len(palabra_2) > len(palabra_3)):
+
+        if(len(palabra_3) > len(palabra_1)):
+
+            print('{}, {}, {}'.format(palabra_2, palabra_3, palabra_1))
+
+        else:
+            print('{}, {}, {}'.format(palabra_2, palabra_1, palabra_3))
+
+    if(len(palabra_3) > len(palabra_1) and len(palabra_3) > len(palabra_2)):
+
+        if(len(palabra_2) > len(palabra_1)):
+
+            print('{}, {}, {}'.format(palabra_3, palabra_2, palabra_1))
+
+        else:
+            print('{}, {}, {}'.format(palabra_3, palabra_1, palabra_2))
+
+
