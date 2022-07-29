@@ -30,3 +30,36 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+temperatura_1 = float(input('Ingrese temperatura 1:\n'))
+temperatura_2 = float(input('Ingrese temperatura 2:\n'))
+temperatura_3 = float(input('Ingrese temperatura 3:\n'))
+
+if(temperatura_1 > temperatura_2 and temperatura_1 > temperatura_3):
+    print('La maxima es temperatura 1 = {}'.format(temperatura_1))
+    
+    if(temperatura_2 < temperatura_3):
+        print('La minima es temperatura 2 = {}'.format(temperatura_2))
+
+    else:
+        print('La minima es temperatura 3 = {}'.format(temperatura_3))
+
+
+if(temperatura_3 > temperatura_2 and temperatura_3 > temperatura_1):
+    print('La maxima es temperatura 3 = {}'.format(temperatura_3))
+
+    if(temperatura_1 < temperatura_2):
+        print('La minima es temperatura 1 = {}'.format(temperatura_1))
+
+    else:
+        print('La minima es temperatura 2 = {}'.format(temperatura_2))
+
+
+if(temperatura_2 > temperatura_3 and temperatura_2 > temperatura_1):
+    print('La maxima es temperatura 2 = {}'.format(temperatura_2))
+
+    if(temperatura_1 < temperatura_3):
+        print('La minima es temperatura 1 = {}'.format(temperatura_1))
+
+    else:
+        print('La minima es temperatura 3 = {}'.format(temperatura_3))
